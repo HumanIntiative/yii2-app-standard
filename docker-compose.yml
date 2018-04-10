@@ -1,0 +1,22 @@
+version: "3"
+services:
+  app:
+    build:
+      context: .
+      dockerfile: ./Dockerfile-app
+    container_name: stddev-app
+    ports:
+      - "8080:80"
+    volumes:
+      - .:/var/www/html
+  db:
+    build:
+      context: .
+      dockerfile: ./Dockerfile-db
+    container_name: stddev-db
+    environment:
+      - POSTGRES_USER=standard
+      - POSTGRES_PASSWORD=password
+      - POSTGRES_DB=pkpu_db
+    ports:
+      - "2345:5432"
