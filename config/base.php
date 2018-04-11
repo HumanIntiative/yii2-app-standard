@@ -52,7 +52,12 @@ return [
 		],
 		'view' => [
 			'class' => 'app\components\web\View',
-			// 'as additional' => 'pkpudev\components\web\ViewBehavior',
+			'theme' => [
+				'pathMap' => [
+					'@app/views' => '@app/views/adminlte',
+				],
+			],
+			'as fun' => 'pkpudev\components\web\ViewBehavior',
 		],
 	],
 	'modules' => [

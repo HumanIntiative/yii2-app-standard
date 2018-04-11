@@ -63,8 +63,8 @@ class UserMenu extends Widget
 						<?= Html::button('Sign out', [
 							'class' => 'btn btn-default btn-flat',
 							'type' => 'submit',
-							// 'data-method' => 'post',
-							// 'data-request-method' => 'post',
+							'data-method' => 'post',
+							'data-request-method' => 'post',
 						]) ?>
 					</form>
 				</div>

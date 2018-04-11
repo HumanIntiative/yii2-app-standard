@@ -1,6 +1,6 @@
 <?php
 
-if (YII_DEBUG) {
+if (YII_ENV == 'dev') {
 	$user = [
 		'class' => 'app\components\web\WebUser',
 		'identityClass' => 'app\models\User',
