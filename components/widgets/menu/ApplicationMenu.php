@@ -1,6 +1,6 @@
 <?php
 
-namespace app\components\widgets;
+namespace app\components\widgets\menu;
 
 use dmstr\widgets\Menu;
 use yii\base\Widget;

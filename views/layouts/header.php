@@ -20,20 +20,20 @@ $logoLg = Html::tag('span', Yii::$app->name, ['class'=>'logo-lg']); ?>
             <ul class="nav navbar-nav">
                 <!-- Messages: style can be found in dropdown.less-->
                 <li class="dropdown messages-menu">
-                    <?= \app\components\widgets\MessageMenu::widget(['asset'=>$directoryAsset]) ?>
+                    <?= \app\components\widgets\menu\MessageMenu::widget(['asset'=>$directoryAsset]) ?>
                 </li>
                 <li class="dropdown notifications-menu">
-                    <?= \app\components\widgets\NotificationMenu::widget() ?>
+                    <?= \app\components\widgets\menu\NotificationMenu::widget() ?>
                 </li>
 
                 <!-- Tasks: style can be found in dropdown.less -->
                 <li class="dropdown tasks-menu">
-                    <?= \app\components\widgets\TaskMenu::widget() ?>
+                    <?= \app\components\widgets\menu\TaskMenu::widget() ?>
                 </li>
 
                 <!-- User Account: style can be found in dropdown.less -->
                 <li class="dropdown user user-menu">
-                    <?= \app\components\widgets\UserMenu::widget(['asset'=>$directoryAsset]) ?>
+                    <?= \app\components\widgets\menu\UserMenu::widget(['asset'=>$directoryAsset]) ?>
                 </li>
             </ul>
         </div>
