@@ -20,7 +20,7 @@ $config = \yii\helpers\ArrayHelper::merge(
 		require("{$configDir}/queue.php") : [],
 	file_exists("{$configDir}/{$appType}-{$env}.php") ? 
 		require("{$configDir}/{$appType}-{$env}.php") : require("{$configDir}/{$appType}.php"),
-	file_exists("{$configDir}/user.php") && $env == 'prod' ?
+	file_exists("{$configDir}/user.php") ?
 		require("{$configDir}/user.php") : []
 );
 

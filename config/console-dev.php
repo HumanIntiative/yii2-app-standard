@@ -2,6 +2,7 @@
 
 return [
 	// 'bootstrap' => ['gii'],
+	'id' => 'app-console-dev',
 	'controllerNamespace' => 'app\commands',
 	'controllerMap' => [
 		'fixture' => [

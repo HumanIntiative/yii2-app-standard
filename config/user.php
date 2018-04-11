@@ -5,9 +5,6 @@ if (YII_DEBUG) {
 		'class' => 'app\components\web\WebUser',
 		'identityClass' => 'app\models\User',
 		'enableAutoLogin' => true,
-		'as enhancement' => [
-			'class' => 'app\components\behaviors\User',
-		],
 	];
 } else {
 	$user = [
@@ -27,9 +24,6 @@ if (YII_DEBUG) {
 		),
 		'superuserCheck' => true,
 		'superuserPermissionName' => 'superuserAccess',
-		'as enhancement' => [
-			'class' => 'app\components\behaviors\User',
-		],
 	];
 }
 

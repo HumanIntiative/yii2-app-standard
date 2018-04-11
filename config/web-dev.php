@@ -7,17 +7,6 @@ return [
 		'cache' => [
 			'class' => 'yii\caching\DummyCache',
 		],
-		'log' => [
-			'targets' => [
-				// writes to php-fpm output stream
-				[
-					'class' => 'codemix\streamlog\Target',
-					'url' => 'php://stderr',
-					'levels' => ['error', 'warning'],
-					'logVars' => [],
-				],
-			],
-		],
 	],
 	'modules' => [
 		'admin' => [
@@ -33,6 +22,7 @@ return [
 		],
 	],
 	'as access' => [
+		'class' => 'mdm\admin\classes\AccessControl',
 		'allowActions' => [
 			'debug/*',
 			'gii/*',

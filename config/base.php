@@ -8,7 +8,7 @@ return [
 	'name' => getenv('APP_TITLE'),
 	'language' => 'id',
 	'basePath' => dirname(__DIR__),
-	'bootstrap' => ['log','queue'], // Bootstrapped modules are loaded in every request
+	'bootstrap' => ['log'], // Bootstrapped modules are loaded in every request
 	'defaultRoute' => 'dashboard',
 	'controllerMap' => [
 		'migrate' => [

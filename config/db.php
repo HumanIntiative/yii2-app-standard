@@ -15,12 +15,16 @@ if (YII_ENV == 'dev') {
 }
 
 return [
-    'class' => 'yii\db\Connection',
-    'dsn' => "pgsql:host={$hostname};port={$port};dbname={$database}",
-		'username' => $username,
-		'password' => $password,
-    'charset' => 'utf8',
-    'attributes' => [\PDO::ATTR_EMULATE_PREPARES => true],
-    'queryCacheDuration' => getenv('CACHE_DURATION'),
-		'schemaCacheDuration' => getenv('CACHE_DURATION'),
+	'components' => [
+		'db' => [
+			'class' => 'yii\db\Connection',
+			'dsn' => "pgsql:host={$hostname};port={$port};dbname={$database}",
+			'username' => $username,
+			'password' => $password,
+			'charset' => 'utf8',
+			'attributes' => [\PDO::ATTR_EMULATE_PREPARES => true],
+			'queryCacheDuration' => getenv('CACHE_DURATION'),
+			'schemaCacheDuration' => getenv('CACHE_DURATION'),
+		],
+	],
 ];

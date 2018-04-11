@@ -38,15 +38,11 @@ return [
 		],
 	],
 	'as access' => [
-		'class' => 'app\components\rbac\AccessControlWithRule',
+		'class' => 'mdm\admin\classes\AccessControl',
 		'allowActions' => [
-			'api/*',
-			'giim/*',
 			'site/error',
 			'site/login',
 			'site/logout',
-			'report/*',
-			'image/*'
 		],
 	],
 ];

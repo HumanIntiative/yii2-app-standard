@@ -4,7 +4,7 @@
     "minimum-stability": "stable",
     "require": {
         "php": ">=5.6",
-        "dmstr/yii2-adminlte-asset": "~2.6.0",
+        "dmstr/yii2-adminlte-asset": "~2.6",
         "johnitvn/yii2-ajaxcrud": "*",
         "kartik-v/yii2-builder": "*",
         "kartik-v/yii2-date-range": "*",
@@ -14,32 +14,35 @@
         "kartik-v/yii2-widgets": "*",
         "mdmsoft/yii2-admin": "~3.0",
         "notamedia/yii2-sentry": "^1.2",
-        "phpoffice/phpspreadsheet": "~1.2.0",
-        "pkpudev/yii2-components": "0.1.10",
+        "phpoffice/phpspreadsheet": "~1.2",
+        "pkpudev/yii2-components": "*",
         "pkpudev/yii2-simplesaml": "*",
         "schmunk42/yii2-giiant": "~0.10",
         "vlucas/phpdotenv": "2.*",
-        "yiisoft/yii2": "~2.0.13.1",
-        "yiisoft/yii2-bootstrap": "~2.0.8",
-        "yiisoft/yii2-queue": "~2.0.2",
-        "yiisoft/yii2-shell": "~2.0.1",
-        "yiisoft/yii2-swiftmailer": "~2.1.0"
+        "yiisoft/yii2": "~2.0.13",
+        "yiisoft/yii2-bootstrap": "~2.0",
+        "yiisoft/yii2-queue": "~2.0",
+        "yiisoft/yii2-shell": "~2.0",
+        "yiisoft/yii2-swiftmailer": "~2.1"
     },
     "require-dev": {
-        "yiisoft/yii2-debug": "~2.0.0",
-        "yiisoft/yii2-gii": "~2.0.0",
-        "yiisoft/yii2-faker": "~2.0.0",
-        "codeception/base": "^2.2.3",
-        "codeception/verify": "~0.3.1",
-        "codeception/specify": "~0.4.3"
+        "yiisoft/yii2-debug": "~2.0",
+        "yiisoft/yii2-gii": "~2.0",
+        "yiisoft/yii2-faker": "~2.0",
+        "codeception/base": "^2.2",
+        "codeception/verify": "~0.3",
+        "codeception/specify": "~0.4"
     },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://asset-packagist.org"
+        }
+    ],
     "config": {
         "process-timeout": 1800,
         "fxp-asset":{
-            "installer-paths": {
-                "npm-asset-library": "vendor/npm",
-                "bower-asset-library": "vendor/bower"
-            }
+            "enabled": false
         }
     },
     "scripts": {

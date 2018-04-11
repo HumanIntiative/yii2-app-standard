@@ -2,6 +2,8 @@
 
 return [
 	// 'bootstrap' => ['gii'],
+	'id' => 'app-console',
+	'basePath' => dirname(__DIR__),
 	'controllerNamespace' => 'app\commands',
 	'controllerMap' => [
 		'fixture' => [
