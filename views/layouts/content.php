@@ -5,22 +5,22 @@ use yii\widgets\Breadcrumbs; ?>
 
 <div class="content-wrapper">
     <section class="content-header">
+        <h1 class="page-header">
         <?php if (isset($this->blocks['content-header'])): ?>
-            <h1 class="page-header"><?= $this->blocks['content-header'] ?></h1>
+            <?= $this->blocks['content-header'] ?>
         <?php else: ?>
-            <h1 class="page-header">
-                <?php
-                if ($this->title !== null) {
-                    echo $this->title;
-                } else {
-                    echo Inflector::camel2words(Inflector::id2camel($this->context->module->id));
-                    echo ($this->context->module->id !== \Yii::$app->id) ? '<small>Module</small>' : '';
-                } ?>
-            </h1>
+            <?php
+            if ($this->title !== null) {
+                echo $this->title;
+            } else {
+                echo Inflector::camel2words(Inflector::id2camel($this->context->module->id));
+                echo ($this->context->module->id !== \Yii::$app->id) ? '<small>Module</small>' : '';
+            } ?>
         <?php endif; ?>
+        </h1>
 
         <?= Breadcrumbs::widget( [
-            'links' => isset($this->params['breadcrumbs']) ? /*array_map('strip_tags', */$this->params['breadcrumbs']/*)*/  : [],
+            'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
         ]) ?>
     </section>
 

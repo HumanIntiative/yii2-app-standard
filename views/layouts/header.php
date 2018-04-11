@@ -13,7 +13,7 @@ $logoLg = Html::tag('span', Yii::$app->name, ['class'=>'logo-lg']); ?>
 <header class="main-header">
     <?= Html::a($logoMini . $logoLg, Yii::$app->homeUrl, ['class' => 'logo']) ?>
     <nav class="navbar navbar-static-top" role="navigation">
-        <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+        <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
             <span class="sr-only">Toggle navigation</span>
         </a>
         <div class="navbar-custom-menu">
