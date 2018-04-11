@@ -1,12 +1,13 @@
 <?php
 
-use yii\helpers\Html;
 use app\models\Company;
+use yii\helpers\Html;
 
 /* @var $this \yii\web\View */
 /* @var $content string */
+
 $companyId = Yii::$app->user->identity->company_id;
-$logoMini = Html::tag('span', 'PMP', ['class'=>'logo-mini']);
+$logoMini = Html::tag('span', 'App', ['class'=>'logo-mini']);
 $logoLg = Html::tag('span', Yii::$app->name, ['class'=>'logo-lg']); ?>
 
 <header class="main-header">

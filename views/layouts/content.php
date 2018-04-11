@@ -1,7 +1,7 @@
 <?php
-use yii\widgets\Breadcrumbs;
+use dmstr\widgets\Alert;
 use yii\helpers\Inflector;
-use dmstr\widgets\Alert; ?>
+use yii\widgets\Breadcrumbs; ?>
 
 <div class="content-wrapper">
     <section class="content-header">
@@ -34,6 +34,6 @@ use dmstr\widgets\Alert; ?>
     <div class="pull-right hidden-xs">
         <b>Version</b> <?= getenv('APP_VERSION') ?>
     </div>
-    <strong>Copyright &copy; 2015-<?= date('Y') ?> <a href="http://project.dev"><?= getenv('APP_TITLE') ?></a>.</strong>
+    <strong>Copyright &copy; 2018-<?= date('Y') ?> <a href="http://project.dev"><?= getenv('APP_TITLE') ?></a>.</strong>
     All rights reserved.
 </footer>
