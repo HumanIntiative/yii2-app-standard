@@ -1,101 +1,75 @@
-![Logo of the project](./images/logo.sample.png)
+# App Standard PkpuDev
+> Build for Pkpu Dev Team &middot;
 
-# App Standard PkpuDev &middot;
-> Additional information or tag line
-
-A brief description of your project, what it is used for.
+A brief description of your project here.
 
 ## Installing / Getting started
 
-A quick introduction of the minimal setup you need to get a hello world up &
-running.
+Simply clone this repo to your computer and change <AppName> to your liking
 
 ```shell
-commands here
+git clone git@github.com:pkpudev/yii2-app-standard.git <AppName>
 ```
-
-Here you should say what actually happens when you execute the code above.
 
 ## Developing
 
 ### Built With
-List main libraries, frameworks used including versions (React, Angular etc...)
+
+See *composer.json*
 
 ### Prerequisites
-What is needed to set up the dev environment. For instance, global dependencies or any other tools. include download links.
 
+- php >= 7.0
+- postgresql (for now)
+- docker-compose (if you want to use docker)
 
 ### Setting up Dev
 
-Here's a brief intro about what a developer must do in order to start developing
-the project further:
+Install all the dependencies using *composer*
 
 ```shell
-git clone https://github.com/your/your-project.git
-cd your-project/
-packagemanager install
+cd <AppName>/
+composer install
 ```
-
-And state what happens step-by-step. If there is any virtual environment, local server or database feeder needed, explain here.
 
 ### Building
 
-If your project needs some additional steps for the developer to build the
-project after some code changes, state them here. for example:
-
-```shell
-./configure
-make
-make install
-```
-
-Here again you should state what actually happens when the code above gets
-executed.
+Coming soon
 
 ### Deploying / Publishing
-give instructions on how to build and release a new version
-In case there's some step you have to take that publishes this project to a
-server, this is the right time to state it.
 
-```shell
-packagemanager deploy your-project -s server.com -u username -p password
-```
-
-And again you'd need to tell what the previous code actually does.
+Coming soon
 
 ## Versioning
 
 We can maybe use [SemVer](http://semver.org/) for versioning. For the versions available, see the [link to tags on this repository](/tags).
 
-
 ## Configuration
 
-Here you should write what are all of the configurations a user can enter when
-using the project.
+Simply copy and update your *.env-example* file to *.env* to your project preference
 
 ## Tests
 
-Describe and show how to run the tests with code examples.
-Explain what these tests test and why.
+With **phpunit** or **codeception**
 
-```shell
-Give an example
-```
+Coming soon
 
 ## Style guide
 
-Explain your code style and show how to check it.
+Coming soon
 
 ## Api Reference
 
-If the api is external, link to api documentation. If not describe your api including authentication methods as well as explaining all the endpoints with their required parameters.
-
+No Api
 
 ## Database
 
-Explaining what database (and version) has been used. Provide download links.
-Documents your database design and schemas, relations etc... 
+Create migration files then execute this command
+
+```shell
+./yii migrate
+```
 
 ## Licensing
 
-State what the license is and how to find the text version of the license.
+PKPU License
