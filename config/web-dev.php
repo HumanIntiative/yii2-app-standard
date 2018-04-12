@@ -22,7 +22,7 @@ return [
 		],
 	],
 	'as access' => [
-		'class' => 'mdm\admin\classes\AccessControl',
+		'class' => 'mdm\admin\components\AccessControl',
 		'allowActions' => [
 			'debug/*',
 			'gii/*',

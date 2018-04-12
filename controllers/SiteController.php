@@ -2,12 +2,14 @@
 
 namespace app\controllers;
 
+use app\components\Controller;
 use app\models\LoginForm;
 use Yii;
-use yii\web\Controller;
 
 class SiteController extends Controller
 {
+    public $enableCsrfValidation = false;
+
     /**
      * @inheritdoc
      */
