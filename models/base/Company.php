@@ -52,8 +52,4 @@ abstract class Company extends \yii\db\ActiveRecord
             'guid' => 'Guid',
         ];
     }
-
-
-
-
 }

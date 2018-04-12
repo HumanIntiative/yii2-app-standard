@@ -8,11 +8,11 @@ use yii\helpers\Html;
 
 class NotificationMenu extends Widget
 {
-	public $count = 0;
+    public $count = 0;
 
-	public function run()
-	{
-		?>
+    public function run()
+    {
+        ?>
 		<a href="#" class="dropdown-toggle" data-toggle="dropdown">
 			<i class="fa fa-bell-o"></i>
 			<?php if ($this->count > 0): ?>
@@ -56,5 +56,5 @@ class NotificationMenu extends Widget
 			<li class="footer"><a href="#">View all</a></li>
 		</ul>
 		<?php
-	}
+    }
 }

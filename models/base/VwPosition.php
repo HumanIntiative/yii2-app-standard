@@ -36,9 +36,9 @@ abstract class VwPosition extends \yii\db\ActiveRecord
      */
     public function getAliasModel($plural=false)
     {
-        if($plural){
+        if ($plural) {
             return Yii::t('app', 'VwPositions');
-        }else{
+        } else {
             return Yii::t('app', 'VwPosition');
         }
     }
@@ -83,10 +83,7 @@ abstract class VwPosition extends \yii\db\ActiveRecord
             'position_name' => 'Position Name',
             'department' => 'Department',
             'supposition_id' => 'Supposition Id',
-            ]);
+            ]
+        );
     }
-
-
-
-
 }

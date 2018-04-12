@@ -80,8 +80,4 @@ abstract class Location extends \yii\db\ActiveRecord
             'latitude' => 'Latitude',
         ];
     }
-
-
-
-
 }

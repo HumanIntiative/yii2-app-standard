@@ -8,12 +8,12 @@ use yii\helpers\Html;
 
 class TaskMenu extends Widget
 {
-	public $asset;
-	public $count = 0;
+    public $asset;
+    public $count = 0;
 
-	public function run()
-	{
-		?>
+    public function run()
+    {
+        ?>
 		<a href="#" class="dropdown-toggle" data-toggle="dropdown">
 			<i class="fa fa-flag-o"></i>
 			<?php if ($this->count > 0): ?>
@@ -96,5 +96,5 @@ class TaskMenu extends Widget
 			</li>
 		</ul>
 		<?php
-	}
+    }
 }

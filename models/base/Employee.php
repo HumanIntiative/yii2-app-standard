@@ -981,8 +981,4 @@ abstract class Employee extends \yii\db\ActiveRecord
     {
         return $this->hasMany(\app\models\PositionHistory::className(), ['employee_id' => 'id']);
     }
-
-
-
-
 }

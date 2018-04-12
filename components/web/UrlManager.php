@@ -6,7 +6,7 @@ use yii\web\UrlManager as BaseUrlManager;
 
 class UrlManager extends BaseUrlManager
 {
-	public $enablePrettyUrl = true;
-	public $enableStrictParsing = false;
-	public $showScriptName = false;
+    public $enablePrettyUrl = true;
+    public $enableStrictParsing = false;
+    public $showScriptName = false;
 }

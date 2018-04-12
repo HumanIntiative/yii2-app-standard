@@ -10,11 +10,11 @@ use app\models\base\Location as BaseLocation;
  */
 class Location extends BaseLocation
 {
-	public function fields()
-	{
-		return [
-			'id',
-			'text'=>'location_name',
-		];
-	}
+    public function fields()
+    {
+        return [
+            'id',
+            'text'=>'location_name',
+        ];
+    }
 }

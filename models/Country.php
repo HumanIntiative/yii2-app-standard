@@ -10,5 +10,5 @@ use app\models\base\Country as BaseCountry;
  */
 class Country extends BaseCountry
 {
-	const INDONESIA = 100;
+    const INDONESIA = 100;
 }

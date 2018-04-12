@@ -1,7 +1,9 @@
 <?php
 use dmstr\widgets\Alert;
 use yii\helpers\Inflector;
-use yii\widgets\Breadcrumbs; ?>
+use yii\widgets\Breadcrumbs;
+
+?>
 
 <div class="content-wrapper">
     <section class="content-header">
@@ -19,7 +21,7 @@ use yii\widgets\Breadcrumbs; ?>
         <?php endif; ?>
         </h1>
 
-        <?= Breadcrumbs::widget( [
+        <?= Breadcrumbs::widget([
             'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
         ]) ?>
     </section>

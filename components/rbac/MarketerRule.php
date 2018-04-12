@@ -7,13 +7,13 @@ use yii\rbac\Rule;
 
 class MarketerRule extends Rule
 {
-	use RuleTrait;
+    use RuleTrait;
 
-	public $name = 'isMarketer';
+    public $name = 'isMarketer';
 
-	public function execute($user, $item, $params)
-	{
-		$employee = $this->getEmployee($user);
-		return $employee ? $employee->is_marketer : false;
-	}
+    public function execute($user, $item, $params)
+    {
+        $employee = $this->getEmployee($user);
+        return $employee ? $employee->is_marketer : false;
+    }
 }

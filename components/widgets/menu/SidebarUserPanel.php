@@ -8,13 +8,13 @@ use yii\helpers\Html;
 
 class SidebarUserPanel extends Widget
 {
-	public $asset;
+    public $asset;
 
-	protected $photoUrl = '//intranet.pkpu.or.id/dev/photo/';
+    protected $photoUrl = '//intranet.pkpu.or.id/dev/photo/';
 
-	public function run()
-	{
-		?>
+    public function run()
+    {
+        ?>
 		<div class="user-panel">
 			<div class="pull-left image">
 				<img src="<?= $this->photoUrl ?>/<?= Yii::$app->user->id ?>.jpg" class="img-circle" alt="User Image"/>
@@ -26,5 +26,5 @@ class SidebarUserPanel extends Widget
 			</div>
 		</div>
 		<?php
-	}
+    }
 }

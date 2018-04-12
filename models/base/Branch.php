@@ -99,8 +99,4 @@ abstract class Branch extends \yii\db\ActiveRecord
             'company_id' => 'Company ID',
         ];
     }
-
-
-
-
 }

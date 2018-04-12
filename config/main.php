@@ -13,15 +13,15 @@ $env = YII_ENV;
 $configDir = __DIR__;
 
 $config = \yii\helpers\ArrayHelper::merge(
-	require("{$configDir}/base.php"),
-	file_exists("{$configDir}/db.php") ?
-		require("{$configDir}/db.php") : [],
-	file_exists("{$configDir}/queue.php") ?
-		require("{$configDir}/queue.php") : [],
-	file_exists("{$configDir}/{$appType}-{$env}.php") ? 
-		require("{$configDir}/{$appType}-{$env}.php") : require("{$configDir}/{$appType}.php"),
-	file_exists("{$configDir}/user.php") ?
-		require("{$configDir}/user.php") : []
+    require("{$configDir}/base.php"),
+    file_exists("{$configDir}/db.php") ?
+        require("{$configDir}/db.php") : [],
+    file_exists("{$configDir}/queue.php") ?
+        require("{$configDir}/queue.php") : [],
+    file_exists("{$configDir}/{$appType}-{$env}.php") ?
+        require("{$configDir}/{$appType}-{$env}.php") : require("{$configDir}/{$appType}.php"),
+    file_exists("{$configDir}/user.php") ?
+        require("{$configDir}/user.php") : []
 );
 
 require('di.php'); // Initialize DI

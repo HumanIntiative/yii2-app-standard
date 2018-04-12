@@ -9,21 +9,21 @@ use yii\helpers\Url;
 
 class UserMenu extends Widget
 {
-	public $asset;
+    public $asset;
 
-	protected $photoUrl;
-	protected $user;
+    protected $photoUrl;
+    protected $user;
 
-	public function init()
-	{
-		parent::init();
-		$this->photoUrl = '//intranet.pkpu.or.id/dev/photo/';
-		$this->user = \Yii::$app->user;
-	}
+    public function init()
+    {
+        parent::init();
+        $this->photoUrl = '//intranet.pkpu.or.id/dev/photo/';
+        $this->user = \Yii::$app->user;
+    }
 
-	public function run()
-	{
-		?>
+    public function run()
+    {
+        ?>
 		<a href="#" class="dropdown-toggle" data-toggle="dropdown">
 			<img src="<?= $this->photoUrl ?>/<?= $this->user->id ?>.jpg" class="user-image" alt="User Image"/>
 			<span class="hidden-xs"><?= !$this->user->isGuest ? $this->user->identity->full_name : "Guest" ?></span>
@@ -52,24 +52,25 @@ class UserMenu extends Widget
 			<!-- Menu Footer-->
 			<li class="user-footer">
 				<div class="pull-left">
-					<?php $url = sprintf('http://hrm.%s/index.php?r=myInfo/view&id=%s',
-						getenv('DOMAIN_URL'),
-						$this->user->id
-					) ?>
+					<?php $url = sprintf(
+            'http://hrm.%s/index.php?r=myInfo/view&id=%s',
+                        getenv('DOMAIN_URL'),
+                        $this->user->id
+                    ) ?>
 					<?= Html::a('Profile', $url, ['class'=>'btn btn-default btn-flat']) ?>
 				</div>
 				<div class="pull-right">
 					<form method="post" action="<?= Url::to(['/site/logout']) ?>" class="inline">
 						<?= Html::button('Sign out', [
-							'class' => 'btn btn-default btn-flat',
-							'type' => 'submit',
-							'data-method' => 'post',
-							'data-request-method' => 'post',
-						]) ?>
+                            'class' => 'btn btn-default btn-flat',
+                            'type' => 'submit',
+                            'data-method' => 'post',
+                            'data-request-method' => 'post',
+                        ]) ?>
 					</form>
 				</div>
 			</li>
 		</ul>
 		<?php
-	}
+    }
 }

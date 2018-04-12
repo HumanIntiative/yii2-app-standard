@@ -58,8 +58,4 @@ abstract class Country extends \yii\db\ActiveRecord
             'country_prefix' => 'Country Prefix',
         ];
     }
-
-
-
-
 }

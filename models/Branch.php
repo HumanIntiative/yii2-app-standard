@@ -9,5 +9,5 @@ use app\models\base\Branch as BaseBranch;
  */
 class Branch extends BaseBranch
 {
-	const PUSAT = 1;
+    const PUSAT = 1;
 }
