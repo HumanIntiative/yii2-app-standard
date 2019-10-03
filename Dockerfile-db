@@ -1,8 +1,0 @@
-# Dockerfile-db
-
-# Use MySQL 5.7 for the base image
-FROM postgres:9.3-alpine
-
-# Copy database initialisation scripts
-COPY docker/init.sql /docker-entrypoint-initdb.d/
-COPY docker/database.sql /db/

@@ -1,18 +1,14 @@
 version: "3"
 services:
   app:
-    build:
-      context: .
-      dockerfile: ./Dockerfile-app
+    image: pkpudev/apache-yii2
     container_name: stddev-app
     ports:
       - "8080:80"
     volumes:
       - .:/var/www/html
   db:
-    build:
-      context: .
-      dockerfile: ./Dockerfile-db
+    image: pkpudev/postgres-yii2
     container_name: stddev-db
     environment:
       - POSTGRES_USER=standard
